@@ -1,10 +1,10 @@
-import 'package:edututor/screens/intro/components/care_view.dart';
-import 'package:edututor/screens/intro/components/center_next_button.dart';
-import 'package:edututor/screens/intro/components/mood_diary_vew.dart';
-import 'package:edututor/screens/intro/components/relax_view.dart';
-import 'package:edututor/screens/intro/components/splash_view.dart';
-import 'package:edututor/screens/intro/components/top_back_skip_view.dart';
-import 'package:edututor/screens/intro/components/welcome_view.dart';
+import 'package:edututor/screens/onboarding/components/care_view.dart';
+import 'package:edututor/screens/onboarding/components/center_next_button.dart';
+import 'package:edututor/screens/onboarding/components/mood_diary_vew.dart';
+import 'package:edututor/screens/onboarding/components/relax_view.dart';
+import 'package:edututor/screens/onboarding/components/splash_view.dart';
+import 'package:edututor/screens/onboarding/components/top_back_skip_view.dart';
+import 'package:edututor/screens/onboarding/components/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 class IntroductionAnimationScreen extends StatefulWidget {

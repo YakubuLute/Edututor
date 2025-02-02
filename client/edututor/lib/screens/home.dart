@@ -135,7 +135,7 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               child: Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: Text(
-                  'Flutter UI',
+                  'Edututor GH',
                   style: TextStyle(
                     fontSize: 22,
                     color: isLightMode ? AppTheme.darkText : AppTheme.white,
@@ -177,12 +177,11 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
 
 class HomeListView extends StatelessWidget {
   const HomeListView(
-      {Key? key,
+      {super.key,
       this.listData,
       this.callBack,
       this.animationController,
-      this.animation})
-      : super(key: key);
+      this.animation});
 
   final HomeList? listData;
   final VoidCallback? callBack;

@@ -5,14 +5,14 @@ import 'package:edututor/screens/main/popular_course_list_view.dart';
 import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
-class DesignCourseHomeScreen extends StatefulWidget {
-  const DesignCourseHomeScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  DesignCourseHomeScreenState createState() => DesignCourseHomeScreenState();
+  HomeScreenState createState() => HomeScreenState();
 }
 
-class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
+class HomeScreenState extends State<HomeScreen> {
   CategoryType categoryType = CategoryType.ui;
 
   @override

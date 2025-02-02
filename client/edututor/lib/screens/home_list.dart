@@ -1,5 +1,5 @@
-import 'package:edututor/screens/intro/introduction_animation_screen.dart';
-import 'package:edututor/screens/main/home_design_course.dart';
+import 'package:edututor/screens/main/courses_home_screen.dart';
+import 'package:edututor/screens/onboarding/onboarding.dart';
 import 'package:flutter/widgets.dart';
 
 class HomeList {
@@ -19,7 +19,7 @@ class HomeList {
 
     HomeList(
       imagePath: 'assets/design_course/design_course.png',
-      navigateScreen: DesignCourseHomeScreen(),
+      navigateScreen: HomeScreen(),
     ),
   ];
 }
