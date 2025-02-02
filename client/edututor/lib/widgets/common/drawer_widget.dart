@@ -1,18 +1,14 @@
-import 'package:edututor/app_theme.dart';
-import 'package:edututor/custom_drawer/drawer_user_controller.dart';
-import 'package:edututor/custom_drawer/home_drawer.dart';
-import 'package:edututor/feedback_screen.dart';
-import 'package:edututor/help_screen.dart';
-import 'package:edututor/home_screen.dart';
-import 'package:edututor/invite_friend_screen.dart';
+import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class NavigationHomeScreen extends StatefulWidget {
+  const NavigationHomeScreen({super.key});
+
   @override
-  _NavigationHomeScreenState createState() => _NavigationHomeScreenState();
+  NavigationHomeScreenState createState() => NavigationHomeScreenState();
 }
 
-class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
+class NavigationHomeScreenState extends State<NavigationHomeScreen> {
   Widget? screenView;
   DrawerIndex? drawerIndex;
 
