@@ -1,12 +1,14 @@
-import 'package:edututor/app_theme.dart';
+import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class InviteFriend extends StatefulWidget {
+  const InviteFriend({super.key});
+
   @override
-  _InviteFriendState createState() => _InviteFriendState();
+  InviteFriendState createState() => InviteFriendState();
 }
 
-class _InviteFriendState extends State<InviteFriend> {
+class InviteFriendState extends State<InviteFriend> {
   @override
   void initState() {
     super.initState();

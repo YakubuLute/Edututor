@@ -1,9 +1,9 @@
-import 'package:edututor/app_theme.dart';
+import 'package:edututor/screens/home_list.dart';
+import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
-import 'model/homelist.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({super.key});
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
