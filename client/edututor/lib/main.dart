@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:edututor/utils/themes/app_themes.dart';
-import 'package:edututor/widgets/common/drawer_widget.dart';
+import 'package:edututor/widgets/drawer/drawer_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
