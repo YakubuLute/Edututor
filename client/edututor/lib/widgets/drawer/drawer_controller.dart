@@ -93,7 +93,7 @@ class DrawerUserControllerState extends State<DrawerUserController>
     var brightness = MediaQuery.of(context).platformBrightness;
     bool isLightMode = brightness == Brightness.light;
     return Scaffold(
-      backgroundColor: isLightMode ? AppTheme.white : AppTheme.nearlyBlack,
+      backgroundColor: isLightMode ? AppTheme.white : AppTheme.deepBlack,
       body: SingleChildScrollView(
         controller: scrollController,
         scrollDirection: Axis.horizontal,

@@ -238,7 +238,7 @@ class CategoryView extends StatelessWidget {
                                                       Icons.add,
                                                       color:
                                                           DesignCourseAppTheme
-                                                              .nearlyWhite,
+                                                              .lightWhite,
                                                     ),
                                                   ),
                                                 )

@@ -116,7 +116,7 @@ class CategoryView extends StatelessWidget {
                                 borderRadius: const BorderRadius.all(
                                     Radius.circular(16.0)),
                                 // border: new Border.all(
-                                //     color: AppTheme.notWhite),
+                                //     color: AppTheme.lightWhite_2),
                               ),
                               child: Column(
                                 children: <Widget>[

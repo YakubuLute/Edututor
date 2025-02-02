@@ -38,7 +38,7 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     bool isLightMode = brightness == Brightness.light;
     return Scaffold(
       backgroundColor:
-          isLightMode == true ? AppTheme.white : AppTheme.nearlyBlack,
+          isLightMode == true ? AppTheme.white : AppTheme.deepBlack,
       body: FutureBuilder<bool>(
         future: getData(),
         builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
@@ -150,7 +150,7 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             child: Container(
               width: AppBar().preferredSize.height - 8,
               height: AppBar().preferredSize.height - 8,
-              color: isLightMode ? Colors.white : AppTheme.nearlyBlack,
+              color: isLightMode ? Colors.white : AppTheme.deepBlack,
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(

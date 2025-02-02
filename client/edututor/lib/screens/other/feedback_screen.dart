@@ -1,4 +1,3 @@
-
 import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
@@ -20,12 +19,12 @@ class FeedbackScreenState extends State<FeedbackScreen> {
     var brightness = MediaQuery.of(context).platformBrightness;
     bool isLightMode = brightness == Brightness.light;
     return Container(
-      color: isLightMode ? AppTheme.nearlyWhite : AppTheme.nearlyBlack,
+      color: isLightMode ? AppTheme.lightWhite : AppTheme.deepBlack,
       child: SafeArea(
         top: false,
         child: Scaffold(
           backgroundColor:
-              isLightMode ? AppTheme.nearlyWhite : AppTheme.nearlyBlack,
+              isLightMode ? AppTheme.lightWhite : AppTheme.deepBlack,
           body: SingleChildScrollView(
             child: SizedBox(
               height: MediaQuery.of(context).size.height,

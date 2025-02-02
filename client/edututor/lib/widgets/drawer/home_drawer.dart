@@ -65,7 +65,7 @@ class HomeDrawerState extends State<HomeDrawer> {
     var brightness = MediaQuery.of(context).platformBrightness;
     bool isLightMode = brightness == Brightness.light;
     return Scaffold(
-      backgroundColor: AppTheme.notWhite.withOpacity(0.5),
+      backgroundColor: AppTheme.lightWhite_2.withOpacity(0.5),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -226,12 +226,12 @@ class HomeDrawerState extends State<HomeDrawer> {
                           child: Image.asset(listData.imageName,
                               color: widget.screenIndex == listData.index
                                   ? Colors.blue
-                                  : AppTheme.nearlyBlack),
+                                  : AppTheme.deepBlack),
                         )
                       : Icon(listData.icon?.icon,
                           color: widget.screenIndex == listData.index
                               ? Colors.blue
-                              : AppTheme.nearlyBlack),
+                              : AppTheme.deepBlack),
                   const Padding(
                     padding: EdgeInsets.all(4.0),
                   ),
@@ -242,7 +242,7 @@ class HomeDrawerState extends State<HomeDrawer> {
                       fontSize: 16,
                       color: widget.screenIndex == listData.index
                           ? Colors.black
-                          : AppTheme.nearlyBlack,
+                          : AppTheme.deepBlack,
                     ),
                     textAlign: TextAlign.left,
                   ),

@@ -18,7 +18,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: DesignCourseAppTheme.nearlyWhite,
+      color: DesignCourseAppTheme.lightWhite,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(
@@ -152,7 +152,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
         decoration: BoxDecoration(
             color: isSelected
                 ? DesignCourseAppTheme.lightBlue
-                : DesignCourseAppTheme.nearlyWhite,
+                : DesignCourseAppTheme.lightWhite,
             borderRadius: const BorderRadius.all(Radius.circular(24.0)),
             border: Border.all(color: DesignCourseAppTheme.lightBlue)),
         child: Material(
@@ -177,7 +177,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
                     fontSize: 12,
                     letterSpacing: 0.27,
                     color: isSelected
-                        ? DesignCourseAppTheme.nearlyWhite
+                        ? DesignCourseAppTheme.lightWhite
                         : DesignCourseAppTheme.lightBlue,
                   ),
                 ),

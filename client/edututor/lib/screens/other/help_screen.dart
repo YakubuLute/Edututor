@@ -18,12 +18,12 @@ class HelpScreenState extends State<HelpScreen> {
     var brightness = MediaQuery.of(context).platformBrightness;
     bool isLightMode = brightness == Brightness.light;
     return Container(
-      color: isLightMode ? AppTheme.nearlyWhite : AppTheme.nearlyBlack,
+      color: isLightMode ? AppTheme.lightWhite : AppTheme.deepBlack,
       child: SafeArea(
         top: false,
         child: Scaffold(
           backgroundColor:
-              isLightMode ? AppTheme.nearlyWhite : AppTheme.nearlyBlack,
+              isLightMode ? AppTheme.lightWhite : AppTheme.deepBlack,
           body: Column(
             children: <Widget>[
               Container(
