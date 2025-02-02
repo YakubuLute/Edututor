@@ -1,16 +1,18 @@
-import 'package:edututor/design_course/category_list_view.dart';
-import 'package:edututor/design_course/course_info_screen.dart';
-import 'package:edututor/design_course/popular_course_list_view.dart';
 import 'package:edututor/main.dart';
+import 'package:edututor/screens/main/category_list_view.dart';
+import 'package:edututor/screens/main/course_info_screen.dart';
+import 'package:edututor/screens/main/popular_course_list_view.dart';
 import 'package:flutter/material.dart';
 import 'design_course_app_theme.dart';
 
 class DesignCourseHomeScreen extends StatefulWidget {
+  const DesignCourseHomeScreen({super.key});
+
   @override
-  _DesignCourseHomeScreenState createState() => _DesignCourseHomeScreenState();
+  DesignCourseHomeScreenState createState() => DesignCourseHomeScreenState();
 }
 
-class _DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
+class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
   CategoryType categoryType = CategoryType.ui;
 
   @override

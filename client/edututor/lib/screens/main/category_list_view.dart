@@ -1,17 +1,17 @@
-import 'package:edututor/design_course/design_course_app_theme.dart';
-import 'package:edututor/design_course/models/category.dart';
 import 'package:edututor/main.dart';
+import 'package:edututor/model/category.dart';
+import 'package:edututor/screens/main/design_course_app_theme.dart';
 import 'package:flutter/material.dart';
 
 class CategoryListView extends StatefulWidget {
-  const CategoryListView({Key? key, this.callBack}) : super(key: key);
+  const CategoryListView({super.key, this.callBack});
 
   final Function()? callBack;
   @override
-  _CategoryListViewState createState() => _CategoryListViewState();
+  CategoryListViewState createState() => CategoryListViewState();
 }
 
-class _CategoryListViewState extends State<CategoryListView>
+class CategoryListViewState extends State<CategoryListView>
     with TickerProviderStateMixin {
   AnimationController? animationController;
 
@@ -81,12 +81,11 @@ class _CategoryListViewState extends State<CategoryListView>
 
 class CategoryView extends StatelessWidget {
   const CategoryView(
-      {Key? key,
+      {super.key,
       this.category,
       this.animationController,
       this.animation,
-      this.callback})
-      : super(key: key);
+      this.callback});
 
   final VoidCallback? callback;
   final Category? category;
