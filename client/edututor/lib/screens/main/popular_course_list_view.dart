@@ -1,6 +1,6 @@
 import 'package:edututor/main.dart';
 import 'package:edututor/model/category.dart';
-import 'package:edututor/screens/main/design_course_app_theme.dart';
+import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class PopularCourseListView extends StatefulWidget {
@@ -116,7 +116,7 @@ class CategoryView extends StatelessWidget {
                                 borderRadius: const BorderRadius.all(
                                     Radius.circular(16.0)),
                                 // border: new Border.all(
-                                //     color: DesignCourseAppTheme.notWhite),
+                                //     color: AppTheme.notWhite),
                               ),
                               child: Column(
                                 children: <Widget>[
@@ -134,8 +134,7 @@ class CategoryView extends StatelessWidget {
                                                 fontWeight: FontWeight.w600,
                                                 fontSize: 16,
                                                 letterSpacing: 0.27,
-                                                color: DesignCourseAppTheme
-                                                    .darkerText,
+                                                color: AppTheme.darkerText,
                                               ),
                                             ),
                                           ),
@@ -159,8 +158,7 @@ class CategoryView extends StatelessWidget {
                                                     fontWeight: FontWeight.w200,
                                                     fontSize: 12,
                                                     letterSpacing: 0.27,
-                                                    color: DesignCourseAppTheme
-                                                        .grey,
+                                                    color: AppTheme.grey,
                                                   ),
                                                 ),
                                                 Container(
@@ -175,16 +173,13 @@ class CategoryView extends StatelessWidget {
                                                               FontWeight.w200,
                                                           fontSize: 18,
                                                           letterSpacing: 0.27,
-                                                          color:
-                                                              DesignCourseAppTheme
-                                                                  .grey,
+                                                          color: AppTheme.grey,
                                                         ),
                                                       ),
                                                       Icon(
                                                         Icons.star,
                                                         color:
-                                                            DesignCourseAppTheme
-                                                                .nearlyBlue,
+                                                            AppTheme.lightBlue,
                                                         size: 20,
                                                       ),
                                                     ],
@@ -220,8 +215,7 @@ class CategoryView extends StatelessWidget {
                                 const BorderRadius.all(Radius.circular(16.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: DesignCourseAppTheme.grey
-                                      .withOpacity(0.2),
+                                  color: AppTheme.grey.withOpacity(0.2),
                                   offset: const Offset(0.0, 0.0),
                                   blurRadius: 6.0),
                             ],

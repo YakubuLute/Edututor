@@ -174,7 +174,7 @@ class DrawerUserControllerState extends State<DrawerUserController>
                                 child: widget.menuView ??
                                     AnimatedIcon(
                                         color: isLightMode
-                                            ? AppTheme.dark_grey
+                                            ? AppTheme.darkGrey
                                             : AppTheme.white,
                                         icon: widget.animatedIconData ??
                                             AnimatedIcons.arrow_menu,

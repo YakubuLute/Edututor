@@ -151,10 +151,10 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
       child: Container(
         decoration: BoxDecoration(
             color: isSelected
-                ? DesignCourseAppTheme.nearlyBlue
+                ? DesignCourseAppTheme.lightBlue
                 : DesignCourseAppTheme.nearlyWhite,
             borderRadius: const BorderRadius.all(Radius.circular(24.0)),
-            border: Border.all(color: DesignCourseAppTheme.nearlyBlue)),
+            border: Border.all(color: DesignCourseAppTheme.lightBlue)),
         child: Material(
           color: Colors.transparent,
           child: InkWell(
@@ -178,7 +178,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
                     letterSpacing: 0.27,
                     color: isSelected
                         ? DesignCourseAppTheme.nearlyWhite
-                        : DesignCourseAppTheme.nearlyBlue,
+                        : DesignCourseAppTheme.lightBlue,
                   ),
                 ),
               ),
@@ -221,7 +221,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
                             fontFamily: 'WorkSans',
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
-                            color: DesignCourseAppTheme.nearlyBlue,
+                            color: DesignCourseAppTheme.lightBlue,
                           ),
                           keyboardType: TextInputType.text,
                           decoration: InputDecoration(
