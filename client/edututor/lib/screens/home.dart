@@ -1,4 +1,5 @@
 import 'package:edututor/screens/home_list.dart';
+import 'package:edututor/screens/main/courses_home_screen.dart';
 import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
@@ -72,35 +73,9 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                               crossAxisSpacing: 12.0,
                               childAspectRatio: 1.5,
                             ),
-                            children: List<Widget>.generate(
-                              homeList.length,
-                              (int index) {
-                                final int count = homeList.length;
-                                final Animation<double> animation =
-                                    Tween<double>(begin: 0.0, end: 1.0).animate(
-                                  CurvedAnimation(
-                                    parent: animationController!,
-                                    curve: Interval((1 / count) * index, 1.0,
-                                        curve: Curves.fastOutSlowIn),
-                                  ),
-                                );
-                                animationController?.forward();
-                                return HomeListView(
-                                  animation: animation,
-                                  animationController: animationController,
-                                  listData: homeList[index],
-                                  callBack: () {
-                                    Navigator.push<dynamic>(
-                                      context,
-                                      MaterialPageRoute<dynamic>(
-                                        builder: (BuildContext context) =>
-                                            homeList[index].navigateScreen!,
-                                      ),
-                                    );
-                                  },
-                                );
-                              },
-                            ),
+                            children: [
+                              HomeScreen()
+                            ],
                           );
                         }
                       },
