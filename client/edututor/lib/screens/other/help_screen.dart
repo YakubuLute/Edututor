@@ -1,12 +1,13 @@
-import 'package:edututor/app_theme.dart';
+import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class HelpScreen extends StatefulWidget {
+  const HelpScreen({super.key});
   @override
-  _HelpScreenState createState() => _HelpScreenState();
+  HelpScreenState createState() => HelpScreenState();
 }
 
-class _HelpScreenState extends State<HelpScreen> {
+class HelpScreenState extends State<HelpScreen> {
   @override
   void initState() {
     super.initState();
