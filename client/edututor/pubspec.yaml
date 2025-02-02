@@ -30,8 +30,9 @@ flutter:
 
   assets:
       - assets/images/
-      - assets/design_course/
-      - assets/introduction_animation/
+      - assets/images/courses
+      - assets/images/onboarding
+
 
   fonts:
     - family: WorkSans
