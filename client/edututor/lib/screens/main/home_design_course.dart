@@ -2,8 +2,8 @@ import 'package:edututor/main.dart';
 import 'package:edututor/screens/main/category_list_view.dart';
 import 'package:edututor/screens/main/course_info_screen.dart';
 import 'package:edututor/screens/main/popular_course_list_view.dart';
+import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
-import 'design_course_app_theme.dart';
 
 class DesignCourseHomeScreen extends StatefulWidget {
   const DesignCourseHomeScreen({super.key});
@@ -18,7 +18,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: DesignCourseAppTheme.lightWhite,
+      color: AppTheme.lightWhite,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(
@@ -63,7 +63,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
               fontWeight: FontWeight.w600,
               fontSize: 22,
               letterSpacing: 0.27,
-              color: DesignCourseAppTheme.darkerText,
+              color: AppTheme.darkerText,
             ),
           ),
         ),
@@ -114,7 +114,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
               fontWeight: FontWeight.w600,
               fontSize: 22,
               letterSpacing: 0.27,
-              color: DesignCourseAppTheme.darkerText,
+              color: AppTheme.darkerText,
             ),
           ),
           Flexible(
@@ -151,10 +151,10 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
       child: Container(
         decoration: BoxDecoration(
             color: isSelected
-                ? DesignCourseAppTheme.lightBlue
-                : DesignCourseAppTheme.lightWhite,
+                ? AppTheme.lightBlue
+                : AppTheme.lightWhite,
             borderRadius: const BorderRadius.all(Radius.circular(24.0)),
-            border: Border.all(color: DesignCourseAppTheme.lightBlue)),
+            border: Border.all(color: AppTheme.lightBlue)),
         child: Material(
           color: Colors.transparent,
           child: InkWell(
@@ -177,8 +177,8 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
                     fontSize: 12,
                     letterSpacing: 0.27,
                     color: isSelected
-                        ? DesignCourseAppTheme.lightWhite
-                        : DesignCourseAppTheme.lightBlue,
+                        ? AppTheme.lightWhite
+                        : AppTheme.lightBlue,
                   ),
                 ),
               ),
@@ -221,7 +221,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
                             fontFamily: 'WorkSans',
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
-                            color: DesignCourseAppTheme.lightBlue,
+                            color: AppTheme.lightBlue,
                           ),
                           keyboardType: TextInputType.text,
                           decoration: InputDecoration(
@@ -278,7 +278,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
                     fontWeight: FontWeight.w400,
                     fontSize: 14,
                     letterSpacing: 0.2,
-                    color: DesignCourseAppTheme.grey,
+                    color: AppTheme.grey,
                   ),
                 ),
                 Text(
@@ -288,7 +288,7 @@ class DesignCourseHomeScreenState extends State<DesignCourseHomeScreen> {
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
                     letterSpacing: 0.27,
-                    color: DesignCourseAppTheme.darkerText,
+                    color: AppTheme.darkerText,
                   ),
                 ),
               ],

@@ -1,6 +1,6 @@
 import 'package:edututor/main.dart';
 import 'package:edututor/model/category.dart';
-import 'package:edututor/screens/main/design_course_app_theme.dart';
+import 'package:edututor/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class CategoryListView extends StatefulWidget {
@@ -141,7 +141,7 @@ class CategoryView extends StatelessWidget {
                                                 fontWeight: FontWeight.w600,
                                                 fontSize: 16,
                                                 letterSpacing: 0.27,
-                                                color: DesignCourseAppTheme
+                                                color: AppTheme
                                                     .darkerText,
                                               ),
                                             ),
@@ -166,7 +166,7 @@ class CategoryView extends StatelessWidget {
                                                     fontWeight: FontWeight.w200,
                                                     fontSize: 12,
                                                     letterSpacing: 0.27,
-                                                    color: DesignCourseAppTheme
+                                                    color: AppTheme
                                                         .grey,
                                                   ),
                                                 ),
@@ -183,14 +183,14 @@ class CategoryView extends StatelessWidget {
                                                           fontSize: 18,
                                                           letterSpacing: 0.27,
                                                           color:
-                                                              DesignCourseAppTheme
+                                                              AppTheme
                                                                   .grey,
                                                         ),
                                                       ),
                                                       Icon(
                                                         Icons.star,
                                                         color:
-                                                            DesignCourseAppTheme
+                                                            AppTheme
                                                                 .lightBlue,
                                                         size: 20,
                                                       ),
@@ -217,13 +217,13 @@ class CategoryView extends StatelessWidget {
                                                     fontWeight: FontWeight.w600,
                                                     fontSize: 18,
                                                     letterSpacing: 0.27,
-                                                    color: DesignCourseAppTheme
+                                                    color: AppTheme
                                                         .lightBlue,
                                                   ),
                                                 ),
                                                 Container(
                                                   decoration: BoxDecoration(
-                                                    color: DesignCourseAppTheme
+                                                    color: AppTheme
                                                         .lightBlue,
                                                     borderRadius:
                                                         const BorderRadius.all(
@@ -237,7 +237,7 @@ class CategoryView extends StatelessWidget {
                                                     child: Icon(
                                                       Icons.add,
                                                       color:
-                                                          DesignCourseAppTheme
+                                                          AppTheme
                                                               .lightWhite,
                                                     ),
                                                   ),
