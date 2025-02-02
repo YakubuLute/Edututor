@@ -1,21 +1,21 @@
-import 'package:edututor/introduction_animation/components/care_view.dart';
-import 'package:edututor/introduction_animation/components/center_next_button.dart';
-import 'package:edututor/introduction_animation/components/mood_diary_vew.dart';
-import 'package:edututor/introduction_animation/components/relax_view.dart';
-import 'package:edututor/introduction_animation/components/splash_view.dart';
-import 'package:edututor/introduction_animation/components/top_back_skip_view.dart';
-import 'package:edututor/introduction_animation/components/welcome_view.dart';
+import 'package:edututor/screens/intro/components/care_view.dart';
+import 'package:edututor/screens/intro/components/center_next_button.dart';
+import 'package:edututor/screens/intro/components/mood_diary_vew.dart';
+import 'package:edututor/screens/intro/components/relax_view.dart';
+import 'package:edututor/screens/intro/components/splash_view.dart';
+import 'package:edututor/screens/intro/components/top_back_skip_view.dart';
+import 'package:edututor/screens/intro/components/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 class IntroductionAnimationScreen extends StatefulWidget {
-  const IntroductionAnimationScreen({Key? key}) : super(key: key);
+  const IntroductionAnimationScreen({super.key});
 
   @override
-  _IntroductionAnimationScreenState createState() =>
-      _IntroductionAnimationScreenState();
+  IntroductionAnimationScreenState createState() =>
+      IntroductionAnimationScreenState();
 }
 
-class _IntroductionAnimationScreenState
+class IntroductionAnimationScreenState
     extends State<IntroductionAnimationScreen> with TickerProviderStateMixin {
   AnimationController? _animationController;
 
